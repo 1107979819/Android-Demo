@@ -16,11 +16,12 @@ public class MainActivity extends Activity {
 		String str = getText();//调用native方法
 		
 		textView.setText(str);
-		System.out.println(str);
+		System.out.println(getText2());
 	}
 
 	static{
 		System.loadLibrary("mylib");//导入链接库
 	}
 	public native String getText();//声明native方法
+	public native String getText2();//声明native方法
 }
