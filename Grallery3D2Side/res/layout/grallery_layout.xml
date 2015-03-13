@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:layout_weight="1"
+        >
+            <TextView
+        android:id="@+id/tvTitle_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp" 
+        android:layout_gravity="center_horizontal"
+        />
+    
+	    <com.grallery3d.GalleryView        
+	        android:id="@+id/gallery_left"
+	        android:spacing="20dp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:unselectedAlpha="128"
+	        android:layout_below="@id/tvTitle_left"
+	        android:layout_marginTop="10dip" />
+	        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+	    
+         <TextView
+        android:id="@+id/tvTitle_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp" 
+        android:layout_gravity="center_horizontal"
+        />
+    
+	    <com.grallery3d.GalleryView        
+	        android:id="@+id/gallery_right"
+	        android:spacing="20dp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:unselectedAlpha="128"
+	        android:layout_below="@id/tvTitle_right"
+	        android:layout_marginTop="10dip" />
+    </LinearLayout>
+
+</LinearLayout>
