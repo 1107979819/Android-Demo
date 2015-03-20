@@ -15,7 +15,11 @@ import android.view.View.OnClickListener;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
-
+/**
+ * фад╩╫ьм╪
+ * @author EPICVIEW
+ *
+ */
 public class MainActivity extends Activity {
 
 	private Button btn1;
